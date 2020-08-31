@@ -1,0 +1,5 @@
+blib/
+bin/
+.git/
+.gitignore
+pm_to_blib

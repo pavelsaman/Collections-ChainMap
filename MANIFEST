@@ -1,0 +1,11 @@
+Changes
+lib/Collections/ChainMap.pm
+Makefile
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+MYMETA.json
+MYMETA.yml
+README.md
+t/Collections-ChainMap.t
+t/critic.t
