@@ -16,6 +16,10 @@ Simple Perl implementation of Python `collections.ChainMap`
 
     Adds multiple maps, param is the same as with `new()` constructor.
 
+- `parents()`:
+    
+    Returns a Collection::ChainMap object with all but the first map.
+
 ## Usage
 
 ```

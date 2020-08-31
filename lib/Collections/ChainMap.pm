@@ -70,6 +70,19 @@ our $VERSION = 0.001;
 
         return;
     }
+
+    sub parents {
+        my $self = shift;
+        
+        my @parents = ();
+        for my $i (1..scalar @{ $maps{maps} } - 1) {
+            push @parents, $maps{maps}->[$i];
+        }
+
+        my $map = Collections::ChainMap->new({ maps => \@parents });
+
+        return $map;
+    }
 }
 
 1;

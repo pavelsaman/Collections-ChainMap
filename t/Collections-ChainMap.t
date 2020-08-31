@@ -99,3 +99,25 @@ subtest 'Add Multiple Maps' => sub {
 
     is($cm->find(6), 'f');
 };
+
+###############################################################################
+
+subtest 'Parents - Skip The First Map' => sub {
+    my $cm = Collections::ChainMap->new({ maps => [\%a, \%b] });   
+
+    my $cm_parents = $cm->parents();
+    isa_ok($cm_parents, 'Collections::ChainMap');
+    is($cm_parents->find(1), undef);
+    is($cm_parents->find(3), 'c');
+};
+
+###############################################################################
+
+subtest 'Parents - No More Maps' => sub {
+    my $cm = Collections::ChainMap->new({ maps => [\%a] });   
+
+    my $cm_parents = $cm->parents();
+    isa_ok($cm_parents, 'Collections::ChainMap');
+    is($cm_parents->find(1), undef);
+    is($cm_parents->find(3), undef);
+};
