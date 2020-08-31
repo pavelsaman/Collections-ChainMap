@@ -73,7 +73,7 @@ our $VERSION = 0.002;
 
     sub parents {
         my $self = shift;
-        
+
         my @parents = ();
         for my $i (1..scalar @{ $maps{maps} } - 1) {
             push @parents, $maps{maps}->[$i];
