@@ -1,4 +1,7 @@
 Revision history for Perl extension Collections::ChainMap.
 
+0.002 Mon Aug 31 17:30:00 2020
+    - parents() method
+
 0.001  Mon Aug 31 13:45:00 2020
     - initial stable version
