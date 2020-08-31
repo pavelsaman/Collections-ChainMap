@@ -6,7 +6,7 @@ use Readonly;
 use Class::Std;
 use Carp qw(croak);
 
-our $VERSION = 0.001;
+our $VERSION = 0.002;
 
 {
     my %maps :ATTR;
